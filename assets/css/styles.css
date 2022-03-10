@@ -1,0 +1,126 @@
+/* 
+	Documentation Comment
+*/
+
+/* apply a natural box layout model to all elements */
+
+body { 
+background: url(../images/bora.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.me {
+	max-width: 250px;
+	height: 250px;
+	
+}
+
+.element {
+	font-size: 42px;
+	display: inline;
+}
+
+.typed-cursor {
+	font-size: 42px;	
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+.container {
+	text-align: center;
+}
+
+.home {
+	border: 1px solid black;
+	max-width: 700px;
+	margin: 0 auto 0;
+	padding: 50px;
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+
+
+a:hover:not(.active){
+	background-color: #9D9595;
+}
+
+.active {
+	background-color: white;
+	color: black;
+	
+}
+
+.projects {
+	/* width: 200px;
+	height: 200px; */
+	max-width: 100%;
+	height: auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+/*Navigation on info.css */
+
+
+
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

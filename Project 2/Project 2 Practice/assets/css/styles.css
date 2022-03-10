@@ -1,0 +1,62 @@
+/* 
+	Documentation Comment
+*/
+
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* GENERAL */
+
+html {
+	background-color: #CB4335;
+}
+
+.container {
+	border: 1px solid black;
+	width: 700px;
+	margin: 0 auto;
+	padding: 50px;
+	background-color: #FBFCFC;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 {
+	font-family: Garamond, 'Times New Roman', serif;
+	line-height: 1.3em;
+}
+
+p, li, figcaption, small, td {
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.3em;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
+	margin-bottom: 0;
+	margin-top: 1.5em;
+}
+
+
+/* MAIN */
+
+ul li {
+	line-height: 2.0em;
+}
+
+ol li {
+	padding-bottom: 0.5em;
+}
+
+/* IMAGES */
+
+
+/* LINKS */

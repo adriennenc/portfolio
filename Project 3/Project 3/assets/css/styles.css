@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Ruda');
+
+/* 
+	Documentation Comment
+*/
+
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+background: url(../images/paradise.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.quote {
+	width: 700px;
+	margin: 0 auto 50px; 
+	border: 2px single black;
+	padding: 2.0em 3.0em 2.0em 4.0em;
+	background-color: rgba(255, 255, 255, 0.1);
+	text-shadow: 2px 2px 10px white;
+	position: absolute;
+    top: 6px;
+    left: -20px;
+    font-size: 18px;
+}
+
+h1 {
+	position: relative;
+	font-family: 'Ruda', 'Arial', sans-serif;
+	color: black;
+} 
+
+
+.goodday {
+	color: white;
+	font-weight: bold;
+	text-shadow: 2px 2px 10px purple;
+}
+
+.mind {
+	color: white;
+	font-weight: bold;
+	text-shadow: 2px 2px 10px purple;
+}

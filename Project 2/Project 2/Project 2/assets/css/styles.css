@@ -1,0 +1,124 @@
+/* 
+	Documentation Comment
+*/
+
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* GENERAL */
+
+html {
+	background-color: #87AFC7;
+}
+
+.breakfast {
+	border: 1px solid black;
+	width: 700px;
+	margin: 0 auto 0;
+	padding: 50px;
+	background-color: white;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 {
+	font-family: Garamond, 'Times New Roman', serif;
+	line-height: 1.3em;
+}
+
+p, li, figcaption, small, td {
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.3em;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
+	margin-bottom: 0;
+	margin-top: 1.2em;
+}
+
+h3 {
+	font-size: 24px;
+	text-align: center
+}
+
+figcaption {
+	font-size: 13px;
+}
+
+/* MAIN */
+
+ul li {
+	line-height: 2.0em;
+}
+
+ol li {
+	padding-bottom: 0.5em;
+}
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+    border-collapse: solid;
+    border: 1px solid #6699cc;
+    margin: 40px auto 0;
+}
+
+th, td {
+    color: #666699;
+    padding: 12px 17px;
+    border-bottom: 1px dashed #69c;
+}
+
+th {
+    font-weight: normal;
+    background: #e8edff;
+    text-align: right;
+}
+
+.related {
+	border-top: 1px dotted black;
+	margin-top: 4.0em;
+	padding-top: 1.0em;
+}
+
+/* IMAGES */
+
+img {
+	width: 100%;
+}
+
+figure {
+	width: 45%;
+	float: right;
+	margin-top: 70px;
+}
+
+/* LINKS */
+
+a:link {
+	color: #000000;
+}
+
+a:visited {
+	color: #000000;
+}
+
+a:hover {
+	color: #FF0000;
+}
+
+a:active {
+	color: #808080;
+}
+	
