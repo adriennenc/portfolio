@@ -1,0 +1,369 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* pdf_split */
+table, th, td {
+    border: 1px solid black;
+	text-align:center;
+}
+
+a.pdf_split:hover, a.pdf_split:active {color: red;}
+a.pdf_split:visited, a.pdf_split:link {
+	font-size: 14px;
+	font-family: "Comic Sans MS", cursive;
+	font-weight: bold;
+}
+span.pdf {
+	font-size:24px;
+	color:red;
+	font-weight:bolder;
+}
+span.pdf1 {
+	font-size:30px;
+	color:#C30;
+	font-style:italic;
+	font-weight:bold;
+}
+
+a.E:visited, a.E:link {
+	background-color: #FFF;
+	font-size: 20px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: red;
+	font-weight:bolder;
+}
+a.E:hover, a.E:active {color: Black;
+font-weight:bolder;
+}
+
+p.jieji_notice {
+color:red;
+font-weight:bold;
+font-size:14.5px;
+font-family:Verdana, Geneva, sans-serif;
+}
+
+ul.sponsor_list {
+	font-size: 16px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+}
+
+ul.sponsor_list a{
+	color:black;
+	
+}
+.sponsor_list .sponsorlogo{
+	display:inline-block;
+	height:250px;
+	width:400px;
+	
+}
+ul.sponsor_list li{
+	list-style:none;
+}
+ul.sponsor_list a:hover {
+	font-weight:lighter;
+}
+
+
+ul.sponsor_list:visited, a.sponsor_list:link {
+	font-size: 15px;
+	color: white;
+	font-weight:bolder;
+}
+.sponsorbg{
+	background:url(../images/Contact-img.jpg);
+	padding:3.5% 0;
+}
+
+span.top_list {
+	color:#F81F22;
+	font-weight:bold;
+	}
+span.emphasis_words {
+	color:#F81F22;
+	font-weight:bold;
+	font-size:14px;
+	}
+div.moon_time_location {
+	position:relative;
+	height:400px;
+}
+div.moon_location {
+	position:absolute;
+	right:0;
+	margin-left:auto;
+}
+
+div.red_box {
+	background-color:#E94747;
+	color:white;
+	margin-right:10px;
+	margin-left:10px;
+	padding-bottom:5px;
+	position:relative;
+}
+div.white_box {
+	background-color:#FFFFFF;
+	color:Black;
+	margin-right:10px;
+	margin-left:10px;
+	padding-bottom:5px;
+	position:relative;
+}
+
+img.bandpicture {
+	margin:1.5%;
+}
+
+div.red_box_text{
+	position:absolute;
+	left:400px;
+	top:0;
+	color:#FFFFFF;
+	margin-top:1.5%;
+}
+
+div.white_box_text{
+	position:absolute;
+	left:400px;
+	top:0;
+	margin-top:1.5%;
+	color:#000000;
+}
+
+video {
+    width: 60%;
+    height: auto;
+}
+div.video{
+	position:relative;
+}
+
+.whole_box{
+	position:relative;
+	height:1000px;
+}
+
+.single_box_1{
+	height: 310px;
+	width: 220px;
+	border-style:solid;
+	border-width: 2.5px;
+	border-color: black;
+	position: absolute;
+	padding: 7px;
+	top:1.5%;
+}
+.single_box_2{
+	height: 310px;
+	width: 220px;
+	border-style:solid;
+	border-width: 2.5px;
+	border-color: black;
+	position: absolute;
+	padding: 7px;
+	top:1.5%;
+	left:290px;
+}
+.single_box_3{
+	height: 310px;
+	width:220px;
+	border-style:solid;
+	border-width: 2.5px;
+	border-color: black;
+	position: absolute;
+	padding: 7px;
+	top:1.5%;
+	left:580px;
+}
+.single_box_4{
+	height: 310px;
+	width: 220px;
+	border-style:solid;
+	border-width: 2.5px;
+	border-color: black;
+	position: absolute;
+	padding: 7px;
+	top:1.5%;
+	left:870px;
+}
+.single_box_5{
+	height: 310px;
+	width: 220px;
+	border-style:solid;
+	border-width: 2.5px;
+	border-color: black;
+	position: absolute;
+	padding: 7px;
+	top:330px;
+}
+.single_box_6{
+	height: 310px;
+	width: 220px;
+	border-style:solid;
+	border-width: 2.5px;
+	border-color: black;
+	position: absolute;
+	padding: 7px;
+	top:330px;
+	left:290px;
+}
+.single_box_7{
+	height: 310px;
+	width:220px;
+	border-style:solid;
+	border-width: 2.5px;
+	border-color: black;
+	position: absolute;
+	padding: 7px;
+	top:330px;
+	left:580px;
+}
+.single_box_8{
+	height: 310px;
+	width: 220px;
+	border-style:solid;
+	border-width: 2.5px;
+	border-color: black;
+	position: absolute;
+	padding: 7px;
+	top:330px;
+	left:870px;
+}
+
+.single_box_9{
+	height: 310px;
+	width: 220px;
+	border-style:solid;
+	border-width: 2.5px;
+	border-color: black;
+	position: absolute;
+	padding: 7px;
+	top:645px;
+}
+.single_box_10{
+	height: 310px;
+	width: 220px;
+	border-style:solid;
+	border-width: 2.5px;
+	border-color: black;
+	position: absolute;
+	padding: 7px;
+	top:645px;
+	left:290px;
+}
+.single_box_11{
+	height: 310px;
+	width:220px;
+	border-style:solid;
+	border-width: 2.5px;
+	border-color: black;
+	position: absolute;
+	padding: 7px;
+	top:645px;
+	left:580px;
+}
+.single_box_12{
+	height: 310px;
+	width: 220px;
+	border-style:solid;
+	border-width: 2.5px;
+	border-color: black;
+	position: absolute;
+	padding: 7px;
+	top:645px;
+	left:870px;
+}
+.like_liked{
+	position:absolute;
+	top:90%;
+	right:70;
+}
+
+.count{
+	position:absolute;
+	left:170px;
+	top:-1%;
+}
+
+p.bolder{
+	font-weight:900;
+	color:#000;
+	font-size:16px;
+}
+p.red_word{
+	color:#F00;
+	font-weight:bold;
+	font-size:16px;
+}
+
+.toupiao{
+	height:auto;
+	width:auto;
+	overflow:scroll;
+}
+
+.sfg_words{
+	width: 600px;
+	height: auto;
+	margin: 1.5%;
+	padding: 8px;
+	line-height: 200%;
+	color: #F5C2C2;
+	border-style: solid;
+	border-color: yellow;
+	background-color: red;
+	
+	}
+
+.sfg_words2{
+	color:#F5C2C2;
+	font-size:19px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+.outside{
+	height:auto;
+	width:auto;
+	background-image:url(../images/duilian.jpg);
+	background-position:top center;
+	background-repeat:no-repeat;
+	}
+
+div.ZX_upper_div{
+	height:520px;
+	width:1000px;
+	position:relative;
+}
+
+div.ZX_intro_upper_div{
+	width:400px;
+	line-height:200%;
+	position:absolute;
+	top:0;
+ 	right:50px;
+}
+div.ZX_mid_div{
+	margin-left:20px;
+}
+
+img.ZX_PIC_upper{
+	margin-left:50px;	
+	position:absolute;
+}
+
+.赞助赞助赞助{
+  font-size:15px;
+  color:#B01618;
+ }
+ 
+.鸣谢鸣谢鸣谢{
+  font-size:15px;
+  color:#B01618;
+}
+
+.春晚介绍{
+	font-size:20px;
+	color:#B01618;
+}

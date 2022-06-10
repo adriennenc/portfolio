@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Lab 11 Project/ Project 5
+Adrienne Chaney -->
+	<head>
+	<title>Lab 11/Project 5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Plugins -->
+	
+	<link rel="stylesheet" href="assets/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="assets/css/blueimp-gallery-indicator.css">
+	<link rel="stylesheet" href="assets/css/hover-min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	
+	<!-- Hover CSS-->
+	<link href="css/Hover-master/css/hover.css" rel="stylesheet" media="all">
+	
+	<!--Custom CSS-->
+	
+	<link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="all">
+	
+	</head>
+	<body>
+		<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">Purrfect Pet Sitters</a>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="#">Photos<span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Testimonials</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link disabled" href="#">FAQS</a>
+			  </li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+			  <!-- <input class="form-control mr-sm-2" type="text"> -->
+			  <i>Phone Number:  </i>812-555-1212
+			</form>
+		  </div>
+		</nav>
+		
+		<header>
+			<div class="container">
+				<h1>Purrfect Pet Sitters</h1>
+				<h2><center> Taking care of your pets while you’re away<center></h2>
+			</div>
+		</header>
+		
+		<!--NOTE: I TRIED TO GET THE LINKS TO WORK, BUT HAD NO LUCK GETTING THE MODULE TO SHOW UP :/ -->
+		<!-- BUTTONS WITH HOVER.CSS CLASS APPLIED -->
+		<button type="button" id="app" class="btn hvr-fade">Make an Appointment</button>
+
+
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+		  Information
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Information About Us</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>Info</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<img src="assets/images/animals.jpg" alt="Animals">
+		
+		<!--NOTE: I TRIED TO GET THE GALLERY TO WORK (LET YOU CLICK ON A PHOTO AND IT EXPANDS, ETC. HOWEVER, IT WOULD NOT WORK. TRIED USING THE STUFF WE USED IN DAY 23 (CODEPEN) ONLY, BUT TO NO AVAIL -->
+		<article id="info" class="py-5">
+			<div class="container">
+				<div class="row">
+		
+					<div class="col-12 col-sm-6 col-md-4">
+						<img class="power" src="assets/images/power.png" alt="How do I get started?">
+						<h3>How Do I Get Started?</h3>
+						<p>To set up a free in-home visit, call us at 812-555-1212 or email at purrfect-petsitters@gmail.com. We’ll come meet you and your pets, take notes on their preferences, and discuss a visit plan. </p>		
+					</div>
+					
+					<div class="col-12 col-sm-6 col-md-4">
+						<img class="power" src="assets/images/calendar.png" alt="How do I schedule visits?">
+						<h3>How Do I Schedule Vists?</h3>
+						<p>Once you’ve completed an in-home visit, to schedule pet sitting, just call 812-555-1212. </p>
+					</div>
+					
+					<div class="col-12 col-sm-6 col-md-4">
+						<img class="power" src="assets/images/money.png" alt="What are the rates?">
+						<h3>What are the rates?</h3>
+						<p>$18 per visit.</p>	
+					</div>
+				</div>
+			</div>
+		</article>
+		<hr>
+		<article>
+			<div class="container">
+				<div class="row" id="links">
+					<div class="col-12 col-sm-6 col-md-4">
+						<a href="assets/images/animals1.jpe" data-toggle="lightbox">
+							<img src="assets/images/animals1.jpe" alt="Animals">
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4">
+						<a href="assets/images/animals1.jpe" data-toggle="lightbox">
+							<img src="assets/images/doggo.jpe" alt="Dog">
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4">
+						<a href="assets/images/animals1.jpe" data-toggle="lightbox">
+							<img src="assets/images/humans.jpe" alt="Humans">
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4">
+						<a href="assets/images/animals1.jpe" data-toggle="lightbox">
+							<img src="assets/images/husky.jpe" alt="Husky">
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4">
+						<a href="assets/images/animals1.jpe" data-toggle="lightbox">
+							<img src="assets/images/nurse.jpg" alt="Nurse">
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4">
+						<a href="assets/images/animals1.jpe" data-toggle="lightbox">
+							<img src="assets/images/what.jpg" alt="What">
+						</a>
+					</div>
+				</div>
+			</div>
+		</article>
+		<hr>
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-md-4">
+						<h2>Contact Information</h2>
+						<p>Purrfect Pet Sitters</p>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4">
+						<address>611 N Woodlawn Ave <br> Bloomington, IN 47408<br>812-555-1212</address>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4">
+						<i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+						<a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+						<p>https://www.facebook.com/purrfect.petsitters</p>
+						<p>purrfect-petsitters@gmail.com</p>
+					</div>
+				</div>
+			</div>	
+		</footer>
+		
+		<!-- Backstretch only works with this version -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+		<script src="https://use.fontawesome.com/a686b3c76b.js"></script>
+
+		<!-- BACKSTRETCH -->
+		<script src="assets/javascript/jquery.backstretch.min.js"></script>
+
+
+		<!-- GALLERY -->
+
+		<script src="assets/js/blueimp-gallery.min.js"></script>
+		<script src="assets/js/blueimp-gallery-indicator.js"></script>
+		<script src="assets/js/blueimp-gallery-fullscreen.js"></script>
+		<script>
+			document.getElementById('links').onclick = function (event) {
+				event = event || window.event;
+				var target = event.target || event.srcElement,
+					link = target.src ? target.parentNode : target,
+					options = {index: link, event: event},
+					links = this.getElementsByTagName('a');
+				blueimp.Gallery(links, options);
+			};
+		</script>
+
+		<!-- CAROUSEL -->
+
+		<script>
+			blueimp.Gallery(
+				document.getElementById('carousel-links').getElementsByTagName('a'),
+				{
+					container: '#blueimp-gallery-carousel',
+					carousel: true
+				}
+			);
+		</script>
+		<script>
+			$('#myModal').on('shown.bs.modal', function () {
+			  $('#myInput').focus()
+			});
+
+		</script>
+
+		<script>
+			$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+				event.preventDefault();
+				$(this).ekkoLightbox();
+			});
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<html>  
+  
+<head><title>Individual Tech Proficiency Assignment 2</title></head>  
+  
+<body>  
+	<center> 
+	<h2>Individual Tech Proficiency Assignment 2</h2>
+	<h3>Simple Calculator</h3>
+	<!-- Opening a HTML Form. -->   
+	<form name="calculator">  
+		<table>
+			<tr>
+				<td colspan="4"><input type = "text" name="result" placeholder="0" disabled style="text-align:right"></input></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7" onclick="number(value)" value="9">  </td>
+				<td><input type="button" value="8" onclick="number(value)" value="8"></td>  
+				<td><input type="button" value="9" onclick="number(value)" value="7"> </td>
+				<td><input type="button" value="+" onclick="number(value)" value="*">  </td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="number(value)" value="6"> </td>
+				<td><input type="button" value="5" onclick="number(value)" value="5">  </td>
+				<td><input type="button" value="6" onclick="number(value)" value="4">  </td>
+				<td><input type="button" value="-" onclick="number(value)" value="-"> </td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" onclick="number(value)" value="3""> </td>
+				<td><input type="button" value="2" onclick="number(value)" value="2">  </td>
+				<td><input type="button" value="3" onclick="number(value)" value="1"> </td>
+				<td><input type="button" value="*" onclick="number(value)" value="+">  </td>
+			</tr>
+			<tr>
+				<td><input type = "button" value="0" onclick="number(value)" value="0"> </td>
+				<td><input type = "button" value="." onclick="number(value)" value=".">  </td>
+				<td><button type = "button" onclick="evalua()">=</button></td>
+				<td><input type = "button" value="/" onclick="number(value)" value="/">  </td>
+			</tr>
+			<tr>
+				<td colspan = 4"><button type = "button" onclick="cle(value)" value="">C</button></td>
+				
+			</tr>
+		</table>
+	</form>
+	</center>
+	<script>
+    function number(value){
+        document.calculator.result.value +=value;
+    }
+    function cle(value){
+        document.calculator.result.value =value;
+    }
+    function evalua(){
+        //var evalu = eval(document.form1.result.value);
+        document.calculator.result.value = eval(document.calculator.result.value);
+    }
+    </script>    
+  
+</body>  
+</html>

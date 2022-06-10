@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title>Addition Helper</title>
+
+<h2><center>Addition Help</center></h2>
+
+<center>
+<p>Random Number 1:</p>
+<b><p id="random1"></p></b>
+<script>var x  = document.getElementById("random1").innerHTML = Math.floor(Math.random() * 101);</script>
+
+<p>Random Number 2:</p>
+<b><p id="random2"></p></b>
+<script>	var y = document.getElementById("random2").innerHTML = Math.floor(Math.random() * 101);</script> 
+<p><center>Please type what you think the sum of Random Number 1 and Random Number 2 into the text box below and press the "Enter" button</center></p>
+
+<input type="number" id="myText" placeholder = "Enter Sum Here">
+<button onclick="myFunction()">Enter</button>
+
+
+
+
+<p>Sum of Random Number 1 and Random Number 2:</p>
+<b><p id="sum"></p></b>
+
+
+
+<p>Are they right</p>
+<p id = "guessAnswer"></p>
+
+
+
+<h2><center>PS: For a new problem, refresh the page!</center></h2>
+
+
+</center>
+
+<script>
+
+
+function myFunction()
+{
+/*	
+	var x  = document.getElementById("random1").innerHTML = Math.floor(Math.random() * 101);
+	var y = document.getElementById("random2").innerHTML = Math.floor(Math.random() * 101);
+*/
+//do {
+let guessAnswer;
+var inputguessAnswer;
+ inputguessAnswer = document.getElementById("myText").valueAsNumber;
+
+	var z = document.getElementById("sum").innerHTML = x + y;
+	let b = [];
+	b.push(z);
+
+
+	
+
+	
+	if (b == inputguessAnswer) {
+		guessAnswer = "Correct!!!!";
+		//break;
+	} else {
+		guessAnswer = "Incorrect. Please Try Again";
+		//break;
+	}
+
+	//document.getElementById("guess").innerHTML = greeting;
+	document.getElementById("guessAnswer").innerHTML = guessAnswer;
+}
+
+</script>
+
+</body>
+</html>

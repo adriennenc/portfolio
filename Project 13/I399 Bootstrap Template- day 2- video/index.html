@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	I399 Bootstrap Template
+-->
+
+	<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<title>I399 Bootstrap Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/a686b3c76b.js"></script>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	</head>
+	<body>
+		<video playsinline autoplay muted loop poster="assets/mov/japanese-cherry-bloom.png" id="bgvid">
+			<source src="assets/mov/japanese-cherry-bloom.webm" type="video/webm">
+			<source src="assets/mov/japanese-cherry-bloom" type="video/mp4">
+		</video>
+		<button id="vidpause" class="btn btn-secondary">Pause Video</button>
+
+		<main class="container">
+
+			<div class="jumbotron">
+				<div class="element"></div>
+			</div>
+
+		</main>
+		
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+	<script src="assets/js/typed.min.js"></script>
+	<script>
+	  document.addEventListener('DOMContentLoaded', function(){
+		  Typed.new('.element', {
+			strings: ["Hello,", "My name is ^1000<strong>Adrienne Chaney.</strong>"],
+			typeSpeed: 100
+		  });
+	  });
+	</script>
+	<script>
+		var vid = document.getElementById("bgvid"),
+		pauseButton = document.getElementById("vidpause");
+		if (window.matchMedia('(prefers-reduced-motion)').matches) {
+		vid.removeAttribute("autoplay");
+		vid.pause();
+		pauseButton.innerHTML = "Paused";
+		}
+	</script>
+	
+	<script>
+		function vidFade() {
+		vid.classList.add("stopfade");
+	}
+	vid.addEventListener('ended', function() {
+		// only functional if "loop" is removed 
+		 vid.pause();
+		// to capture IE10
+		vidFade();
+	});
+	pauseButton.addEventListener("click", function() {
+		vid.classList.toggle("stopfade");
+		if (vid.paused) {
+	vid.play();
+			pauseButton.innerHTML = "Pause Video";
+		} else {
+			vid.pause();
+			pauseButton.innerHTML = "Paused";
+		}
+	})
+	</script>
+  </body>
+</html>

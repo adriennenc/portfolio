@@ -1,0 +1,101 @@
+
+
+/* 
+FYI - Import statements, if any, go on the very first line
+Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+Most of your styles will go in this section
+*/
+
+body {
+	background-color: #8e44ad;
+	
+}
+
+/*Typed.js */
+
+.element {
+	font-size: 42px;
+	display: inline;
+}
+
+.typed-cursor {
+	font-size: 42px;	
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* Video BKG */
+
+video#bgvid { 
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(.../mov/japanese-cherry-bloom.png) no-repeat;
+	background-size: cover; 
+}
+
+#vidpause {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(.../mov/japanese-cherry-bloom.png) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

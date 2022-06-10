@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>I399 Plugins Day 1</title>
+
+	<!-- Plugins -->
+	
+	<link rel="stylesheet" href="assets/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="assets/css/blueimp-gallery-indicator.css">
+	<link rel="stylesheet" href="assets/css/hover-min.css">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+  
+  </head>
+  <body>
+	<!-- Gallery -->
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+		<div class="slides"></div>
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+	</div>
+    <main>
+	
+	<article>
+	
+	<div class="container py-5">
+	  <div class="row year-section">
+		<div class="col-12 col-md-2">
+		  <div class="pull-right year">2014</div>
+		</div>
+		<div class="col-12 col-md-6 col-lg-7">
+		  <div class="big">Here's where the main thing I did goes. It's very important, so it's big.</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3">
+		  <div class="aside">Some additional context or things I did. It is small because it is less important</div>
+		</div>
+	  </div>
+	  <div class="row year-section">
+		<div class="col-12 col-md-2">
+		  <div class="pull-right year">2013</div>
+		</div>
+		<div class="col-12 col-md-6 col-lg-7">
+		  <div class="big">More big things
+			<ul>
+			  <li>Sometimes lists</li>
+			  <li>are important too</li>
+			  <li>Lists with <a>Links</a>.</li>
+			</ul>
+		  </div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3">
+		  <div class="aside">Some additional context or things I did. It is small because it is less important</div>
+		</div>
+	  </div>
+	  <div class="row year-section">
+		<div class="col-12 col-md-2">
+		  <div class="pull-right year">2012</div>
+		</div>
+		<div class="col-12 col-md-6 col-lg-7">
+		  <div class="big">Here's where the main thing I did goes. It's very important, so it's big.</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3">
+		  <div class="aside">Some additional context or things I did. It is small because it is less important
+			<ul>
+			  <li>Lists can be fun over here too.</li>
+			  <li>ESPECIALLY IF THEY HAVE <a>LINKS</a>.</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row year-section">
+		<div class="col-12 col-md-2">
+		  <div class="pull-right year">2011</div>
+		</div>
+		<div class="col-12 col-md-6 col-lg-7">
+		  <div class="big">Here's where the main thing I did goes. It's very important, so it's big.</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3">
+		  <div class="aside">Some additional context or things I did. It is small because it is less important</div>
+		</div>
+	  </div>
+	  <div class="row year-section">
+		<div class="col-12 col-md-2">
+		  <div class="pull-right year">2010</div>
+		</div>
+		<div class="col-12 col-md-6 col-lg-7">
+		  <div class="big">Here's where the main thing I did goes. It's very important, so it's big.</div>
+		</div>
+		<div class="col-12 col-md-4 col-lg-3">
+		  <div class="aside">Some additional context or things I did. It is small because it is less important</div>
+		</div>
+	  </div>
+	</div>
+	
+	</article>
+		<div class="container">
+		    <h1>Plugins: Day 1</h1>
+			<p>hover.css, backstetch.js, blueimp-gallery</p>
+
+			<!-- BUTTONS WITH HOVER.CSS CLASS APPLIED -->
+			<button type="button" id="before" class="btn hvr-fade">Before</button>
+			<button type="button" id="after" class="btn hvr-fade">After</button>
+			
+			<!-- BLOCK LEVEL TARGET FOR BACKSTRETCH.JS -->
+			
+			<div id="aleppo"></div>
+			<small>Photo from Petapixel.com</small>
+
+			<!-- GALLERY (PHOTOS ON PAGE) IN BOOTSTRAP GRID -->
+			<!-- responsive images with 'img-fluid', custom styles with 'item' -->
+			<h2>Gallery</h2>
+			
+			<div class="row" id="links"> <!--Gallery container has to be ID links -->
+				<div class="col-12 col-sm-6 col-md-4">
+					<a href="https://unsplash.it/800/600/?image=530" title="Image 1">
+						<img class="img-fluid" src="https://unsplash.it/350/300/?image=530" alt="Image 1">
+					</a>
+					<small>Image 1</small>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 item">
+					<a href="https://unsplash.it/800/600/?image=958" title="Image 1">
+						<img class="img-fluid" src="https://unsplash.it/350/300/?image=958" alt="Image 2">
+					</a>
+					<small>Image 2</small>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 item">
+					<a href="https://unsplash.it/800/600/?image=940" title="Image 1">
+						<img class="img-fluid" src="https://unsplash.it/350/300/?image=940" alt="Image 3">
+					</a>
+					<small>Image 3</small>
+				</div>
+			</div>
+			
+			
+			<!-- CAROUSEL IMAGES - must be before carousel - hide with styles -->
+			<!-- advanced - image link list can also be created in JS -->
+			
+			
+			<!-- CAROUSEL - Connects to JS below by ID, list of links above by ID -->
+			<h2>Carousel</h2>
+			
+			<div id="carousel-links" style="display: none;">
+				<a href="https://unsplash.it/800/600/?random">
+					<img src="https://unsplash.it/350/300/?random" alt="Image 4">
+				</a>
+				<a href="https://unsplash.it/800/600/?random">
+					<img src="https://unsplash.it/350/300/?random" alt="Image 5">
+				</a>
+				<a href="https://unsplash.it/800/600/?random">
+					<img src="https://unsplash.it/350/300/?random" alt="Image 6">
+				</a>
+			
+			</div>
+			<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+			<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+				<div class="slides"></div>
+				<h3 class="title"></h3>
+				<a class="prev">‹</a>
+				<a class="next">›</a>
+				<a class="play-pause"></a>
+				<ol class="indicator"></ol>
+			</div>
+
+		</div>
+	</main>
+	
+	<!-- Backstretch only works with this version -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+
+	<!-- BACKSTRETCH -->
+	<script src="assets/javascript/jquery.backstretch.min.js"></script>
+	
+	<script>
+		$("#aleppo").backstretch("assets/images/Aleppo-before.png");
+		
+		$("#before").click(function(e) {
+			e.preventDefault();
+			$("#aleppo").backstretch("assets/images/Aleppo-before.png");
+		});
+
+		$("#after").click(function(e) {
+			e.preventDefault();
+			$("#aleppo").backstretch("assets/images/Aleppo-after.png");
+		});
+	
+	</script>
+	
+	<!-- GALLERY -->
+	
+	<script src="assets/javascript/blueimp-gallery.min.js"></script>
+	<script src="assets/javascript/blueimp-gallery-indicator.js"></script>
+	<script src="assets/javascript/blueimp-gallery-fullscreen.js"></script>
+	<script>
+		document.getElementById('links').onclick = function (event) {
+			event = event || window.event;
+			var target = event.target || event.srcElement,
+				link = target.src ? target.parentNode : target,
+				options = {index: link, event: event},
+				links = this.getElementsByTagName('a');
+			blueimp.Gallery(links, options);
+		};
+	</script>
+	
+	<!-- CAROUSEL -->
+	
+	<script>
+		blueimp.Gallery(
+			document.getElementById('carousel-links').getElementsByTagName('a'),
+			{
+				container: '#blueimp-gallery-carousel',
+				carousel: true
+			}
+		);
+	</script>
+    
+  </body>
+</html>

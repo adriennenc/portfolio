@@ -1,0 +1,56 @@
+nav ul {
+	/* remove bullet points */
+	list-style-type: none;
+	/* remove any default spacing */
+	margin: 0;
+	padding: 0;
+	/* color */
+	background-color: #fff;
+	/* keep within its boundaries */
+	overflow: hidden;
+	/* sometimes needed, doesn't hurt */
+	display: block;
+	/* center the menu */
+	width: 504px;
+	margin: 0 auto;
+	/* move where the menu displays for effect */
+	position: relative;
+	top: -24px;
+}
+
+nav li {
+	/* menu items need to sit on the same line */
+	float: left;
+}
+
+nav li a {
+	/* act like a block element */
+	display: block;
+	/* give it some space */
+	padding: 14px 22px;
+	/* style the link like a button */
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	/* add 'invisible' border so menu item doesn't jump on rollover */
+	border-bottom: 3px solid #fefefe;
+}
+
+nav li a:hover {
+	/* change link fill color on hover */
+	border-bottom: 3px solid #F6E6CA;
+}
+
+@media screen and (max-width: 698px) {
+	/* when menu gets scrunched, remove float and 
+	   have elements take up the entire width */
+	nav ul {
+		width: 100%;
+	}
+	nav li {
+		clear: left;
+		float: none;
+	}
+}

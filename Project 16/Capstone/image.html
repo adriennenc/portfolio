@@ -1,0 +1,698 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Image Page</title>
+<script type="text/javascript" src="_mootools.js"></script>
+<script type="text/javascript" src="_class.noobSlide.js"></script>
+<link rel="stylesheet" href="_web.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="styless.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+<!-- grid-slider -->
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
+<!-- //grid-slider -->
+<!---calender-style---->
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<link href="css/style2.css" rel="stylesheet" type="text/css">
+<!---//calender-style---->  
+<style type='text/css'>
+#image-gallery {display: none;}
+  #jquery-gallery {padding:0;margin:0;list-style: none; width: 500px;}
+  #jquery-gallery li {width:84px; height: 80px;background-size: 100%;-webkit-background-size: cover;-moz-background-size: cover; -o-background-size: cover;background-size: cover;margin-right: 10px; border: 3px solid #fff; outline: 1px solid #E3E3E3; margin-bottom: 10px;opacity: .5; filter:alpha(opacity=50); float: left; display: block; }
+#jquery-gallery li img { position: absolute; top: 100px; left: 0px; display: none;}
+  #jquery-gallery li.active img { display: block; border: 3px solid #fff; outline: 1px solid #E3E3E3; width:490px; max-height: 375px;}
+  #jquery-gallery li.active, #jquery-gallery li:hover { outline-color: #DFDFDF; opacity: .99;filter:alpha(opacity=99);}
+#gallery-caption {background: rgba(0, 0, 0, 0.3);color: #fff;font-size: 16px;font-weight: bold;left: 3px;position: absolute;text-align: center;top: 103px;width: 490px;text-transform: uppercase;}
+</style>
+<style>
+body{
+  margin:0;
+  padding:0;
+}
+
+#menu li{
+  list-style-type:none;
+
+}
+
+#menu li img{
+  height:80px;
+  width:100px;
+  padding-bottom:5px;
+}
+
+#left {
+  
+  float:left;
+  margin:30px;
+  
+}
+.right{
+  height:400px;
+  widows:600px;
+  float:left;
+  margin:30px;
+}
+</style>
+<script>
+function onHover(element,number)
+{
+document.getElementsByClassName("right")[number].src= element.getAttribute('src');
+}
+</script>
+<script type='text/javascript'>
+//<![CDATA[
+var gal = {
+init : function() {
+if (!document.getElementById || !document.createElement || !document.appendChild) return false;
+if (document.getElementById('image-gallery')) document.getElementById('image-gallery').id = 'jquery-gallery';
+var li = document.getElementById('jquery-gallery').getElementsByTagName('li');
+li[0].className = 'active';
+for (i=0; i<li.length; i++) {
+li[i].style.backgroundImage = 'url(' + li[i].getElementsByTagName('img')[0].src + ')';
+li[i].title = li[i].getElementsByTagName('img')[0].alt;
+gal.addEvent(li[i],'click',function() {
+var im = document.getElementById('jquery-gallery').getElementsByTagName('li');
+for (j=0; j<im.length; j++) {
+im[j].className = '';
+}
+this.className = 'active';
+document.getElementById('gallery-caption').innerHTML = this.title;
+});
+}
+},
+addEvent : function(obj, type, fn) {
+if (obj.addEventListener) {
+obj.addEventListener(type, fn, false);
+}
+else if (obj.attachEvent) {
+obj["e"+type+fn] = fn;
+obj[type+fn] = function() { obj["e"+type+fn]( window.event ); }
+obj.attachEvent("on"+type, obj[type+fn]);
+}
+}
+}
+gal.addEvent(window,'load', function() {
+gal.init();
+});
+//]]>
+</script>
+</head>
+<div class="header-bottom">
+     <div class="container">
+      <div class="header-bottom_left">
+        
+      </div>
+
+    <div class="social">  
+    <ul>  
+          
+  
+          <!--Search bar-->
+          <input type="text" placeholder="Search...">
+          <!--<button type="submit"></button>-->
+
+
+          <li class="facebook"><a href="https://www.facebook.com/IUCSSA"><span> </span></a></li>
+          <li class="instagram"><a href="http://instagram.com/iucssahoosier"><span> </span></a></li>  
+          
+            
+     </ul>
+       </div>
+       <div class="clear"></div>
+    </div>
+   
+  <!-- end header_bottom -->
+	
+
+
+
+
+
+
+
+
+
+    
+    <!-- start menu -->
+    <div class="menu" id="menu">
+      <img class="logo" src="images/petnet.gif"  alt="PetNet"/>
+	  <div class="container">
+		 
+
+
+     <!---<div class="logo">
+			<a href="index.html"><img src="images/Head-logo-Light.png" height="58px" alt=""/></a>
+		 </div>---->
+
+
+
+		 <div class="h_menu4">
+         <!-- start h_menu4 -->
+		   <a class="toggleMenu" href="#">Menu</a>
+					   <div id='cssmenu'>
+<ul>
+ 
+   <li class='active'><a href='home.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='community.html'><span>Community</span></a>
+   
+    <ul>
+        <!---Dogs-->
+        <li class='has-sub'><a href='dogs.html'><span>Dogs</span></a> 
+       	<!---这里放狗狗分类---->
+        <ul>
+        <li><a href='#'><span>Breed1</span></a></li>
+        <li ><a href='#'><span>Breed2</span></a></li>
+        </ul>
+        </li>
+
+           
+        <!---Cats-->
+        <li class='has-sub'><a href='cats.html'><span>Cats</span></a>
+        <!---这里放猫猫分类---->
+        <ul>
+        <li><a href='#'><span>Breed1</span></a></li>
+        <li ><a href='#'><span>Breed2</span></a></li>
+        </ul>
+        </li>
+
+
+        <!---Ferrets-->
+        <li class='has-sub'><a href='ferrets.html'><span>Ferrets</span></a>
+        <!---这里放分类---->
+        <ul>
+        <li><a href='#'><span>Breed1</span></a></li>
+        <li ><a href='#'><span>Breed2</span></a></li>
+        </ul>
+        </li>
+
+
+        <!---Others-->
+        <li class='has-sub'><a href='#'><span>Others</span></a>
+        <!---这里放分类---->
+        <ul>
+        <li><a href='#'><span>Breed1</span></a></li>
+        <li ><a href='#'><span>Breed2</span></a></li>
+        </ul>
+        </li>
+
+    </ul>
+   
+   </li>
+
+
+
+
+   <li><a href='＃'><span>Images</span></a></li>
+   <!--如果要让正在显示的页面title变成白色（选中模式），class＝‘active’-->
+   
+   <li class='last'><a href='#'><span>Contact</span></a></li>
+</ul>
+</div>
+        
+		  </div>
+          <!-- end h_menu4 -->
+		 <div class="clear"></div>
+	  </div>
+	</div>
+</div>
+    <!-- end menu -->
+	
+
+
+<div class="main">
+       <center><div class="about_banner_img"><img src="images/banner.jpg" class="img-responsive" alt=""></div></center>
+		 <div class="about_banner_wrap">
+      	    <h1 class="m_11">Images</h1>
+      	</div>
+		<div class="border"> </div> 
+		 <div class="container">
+		   <div class="classes_wrapper">
+		 	
+            
+            <!-------0----------->
+            <!--start row -->
+            <div class="row class_box">            
+              <div class="col-md-4">
+              <div class="class_gallery">
+					<h3>Funny dogs</h3>
+					<p>Put intro here</p>
+					
+					  <a href="#zero" data-toggle="modal"><img src="images/image_page/shiba.jpg" class="class_gal_img" alt=""/ title="continue"></a>
+					
+                    
+					    <div class="clear"></div>
+					     <ul class="buttons_class">
+					  	 <li class="btn5"><a href="#zero" data-toggle="modal">Read More</a></li>	
+				         
+			            <div class="clear"></div>
+			         </ul>
+				</div>
+				<div class="clear"></div>
+			  </div>
+
+
+			<!---------1-------->	   
+               
+              <div class="col-md-4">
+              <div class="class_gallery1">
+			
+					<h3>Funny Cats</h3>
+					<p>Intro here</p>
+					
+					 <a href="#one" data-toggle="modal"><img src="images/image_page/cat1.jpg" class="class_gal_img" alt=""/ title="continue"></a>
+					 
+					    <div class="clear"></div>
+					     <ul class="buttons_class">
+					  	 <li class="btn7"><a href="#one" data-toggle="modal">Read More</a></li>	
+				         
+			            <div class="clear"></div>
+			         </ul>
+				</div>
+				<div class="clear"></div>
+			  </div>	
+			
+           <!---------2--------> 
+            <div class="col-md-4">
+              <div class="class_gallery">
+					<h3>Ferrets</h3>
+					<p>Intro</p>
+					
+					 <a href="#two" data-toggle="modal"><img src="images/image_page/ferret1.jpg" class="class_gal_img" alt=""/ title="continue"></a>
+					 
+					    <div class="clear"></div>
+					     <ul class="buttons_class">
+					  	 <li class="btn5"><a href="#two" data-toggle="modal">>Read More</a></li>	
+				         
+			            <div class="clear"></div>
+			         </ul>
+				</div>
+				<div class="clear"></div>
+			  </div>	
+            </div>
+		<!--end row-->    
+             
+         
+  <!---------3----------->         
+            <!--start row -->
+            <div class="row class_box">            
+              <div class="col-md-4">
+              <div class="class_gallery1">
+					<h3>Something</h3>
+					<p>Intro</p>
+					
+					 <a href="#three" data-toggle="modal"><img src="images/image_page/boston.jpg" class="class_gal_img" alt=""/ title="continue"></a>
+					
+                    
+					    <div class="clear"></div>
+					     <ul class="buttons_class">
+					  	 <li class="btn7"><a href="#three" data-toggle="modal">>Read More</a></li>	
+				         
+			            <div class="clear"></div>
+			         </ul>
+				</div>
+				<div class="clear"></div>
+			  </div>	
+			   
+		<!---------4-------->               
+              <div class="col-md-4">
+              <div class="class_gallery">
+			
+					<h3>Something</h3>
+					<p>Intro</p>
+					
+					 <a href="#four" data-toggle="modal"><img src="images/image_page/husky.jpg" class="class_gal_img" alt=""/ title="continue"></a>
+					 
+					    <div class="clear"></div>
+					     <ul class="buttons_class">
+					  	 <li class="btn5"><a href="#four" data-toggle="modal">>Read More</a></li>	
+				         
+			            <div class="clear"></div>
+			         </ul>
+				</div>
+				<div class="clear"></div>
+			  </div>	
+			
+ 		<!---------5-------->           
+            <div class="col-md-4">
+              <div class="class_gallery1">
+					<h3>Something</h3>
+					<p>Intro</p>
+					
+					 <a href="#five" data-toggle="modal"><img src="images/image_page/ferret2.jpg" class="class_gal_img" alt=""/ title="continue"></a>
+					 
+					    <div class="clear"></div>
+					     <ul class="buttons_class">
+					  	 <li class="btn7"><a href="#five" data-toggle="modal">>Read More</a></li>	
+				         
+			            <div class="clear"></div>
+			         </ul>
+				</div>
+				<div class="clear"></div>
+			  </div>	
+            </div>
+		<!--end row-->   
+
+
+
+
+
+    
+
+
+
+                   
+          
+
+
+
+
+<!-- bottom_banner -->
+
+
+
+ <div class="clear"></div>
+         </div>
+       </div>
+      </div>
+      
+        <div class="clear"></div>
+       </div>
+    </div>
+    
+         <div class="clear"></div>
+        
+          
+        <div class="footer-bottom">
+       <div class="container">
+       <div class="row section group">
+        <div class="col-md-4">
+      <h4 class="m_7">2017-2018 Capstone</h4>
+           
+                 
+                   
+          
+        <p class="address"><strong>Team 44</strong></p>
+                 <p class="address">Address : 
+            <small>1 East Erie Street, Suite 500 Chicago, IL 60611</small> </p>
+          <p class="address">Tel : &nbsp;&nbsp;
+                    (312) 453 - 0210&nbsp;; &nbsp;
+                    Fax : &nbsp;&nbsp;
+                    (312) 453 - 02110</p>
+                    <p class="address">Website ： <a class="address" href="#"> 这里可以放网页哇咔咔</a></p> 
+                    <br/>
+                    <h4 class="m_7"><a class="sponsor_list" href="">Sponsor List</h4>
+                
+                </div>
+                
+                <div class="col-md-4">
+                <div class="f-logo">
+            <img src="images/Head-logo-Light.png" height="80px" alt=""/>
+          </div>
+                </div>
+                
+                
+        <div class="col-md-4">
+                <center><h4 class="m_7">IU Websites</h4></center>
+          <ul class="list">
+            
+            <li><a href="http://oncourse.iu.edu">Oncourse</a></li>
+                      <li><a href="http://canvas.iu.edu">Canvas</a></li>
+            <li><a href="http://onestart.iu.edu">Onestart</a></li>
+                        <li><a href="http://istart.iu.edu">Istart</a></li>
+            
+          </ul>
+          <ul class="list1">
+            
+            <li><a href="http://iuware.iu.edu">IU Ware</a></li>
+                        <li><a href="http://gradedistribution.registrar.indiana.edu">AverageGPA</a></li>
+                        <li><a href="http://ud.iub.edu">IU Division</a></li>
+                       <li><a href="http://ois.iu.edu">OIS</a></li>
+                        
+                        
+            
+          </ul>
+        </div>
+        <div class="clear"></div>
+          </div>
+      </div>
+     </div>
+     <div class="copyright">
+      <div class="container">
+        <div class="copy">
+            <p>© Team44 </p>
+        </div>
+        <div class="social">  
+          <ul>  
+          <li class="facebook"><a href=""><span> </span></a></li>
+          <li class="instagram"><a href=""><span> </span></a></li>   
+            
+         </ul>
+        </div>
+       <div class="clear"></div>
+      </div>
+       </div>
+  
+
+
+
+
+
+
+
+
+<!---------0----------->
+         <!------modal begin------>
+     <div id="zero" class="modal fade" tabindex="-1">
+            <div class="modal-dialog " style="width:100%">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Puppies</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+ <!---<div style="position:relative;">-->
+<div id="left">
+        <ul id="menu">
+            <li><img src="images/image_page/0/1.jpg" onmouseover="onHover(this,0);"/></li>
+            <li><img src="images/image_page/0/2.jpg" onmouseover="onHover(this,0);"/></li>
+        </ul>
+    </div>
+    <img class ="right" src="images/image_page/0/1.jpg"/>
+<!----</div>---->
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+
+        <!-------modal end---->
+ <!---------1----------->
+        <!------modal begin------>
+     <div id="one" class="modal fade" tabindex="-1">
+            <div class="modal-dialog " style="width:100%">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Kittens</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+ <!---<div style="position:relative;">-->
+<div id="left">
+        <ul id="menu">
+           <li><img src="images/image_page/1/3.jpg" onmouseover="onHover(this,1);"/></li>
+            <li><img src="images/image_page/1/4.jpg" onmouseover="onHover(this,1);"/></li> 
+        </ul>
+    </div>
+    <img class ="right" src="images/image-page/1/4.jpg"/>
+<!----</div>---->
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+
+        <!-------modal end---->
+
+
+  <!---------2----------->
+        <!------modal begin------>
+     <div id="two" class="modal fade" tabindex="-1">
+            <div class="modal-dialog " style="width:100%">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Ferrets</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+ <!---<div style="position:relative;">-->
+<div id="left">
+        <ul id="menu">
+          <li><img src="images/image_page/2/5.jpg" onmouseover="onHover(this,2);"/></li>
+            <li><img src="images/image_page/2/6.jpg" onmouseover="onHover(this,2);"/></li>
+           
+        </ul>
+    </div>
+    <img class ="right" src="images/image_page/2/5.jpg"/>
+<!----</div>---->
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+
+        <!-------modal end---->
+ <!---------3----------->
+        <!------modal begin------>
+     <div id="three" class="modal fade" tabindex="-1">
+            <div class="modal-dialog " style="width:100%">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Something</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+ <!---<div style="position:relative;">-->
+<div id="left">
+        <ul id="menu">
+			<li><img src="images/image_page/3/7.jpg" onmouseover="onHover(this,3);"/></li>
+            <li><img src="images/image_page/3/8.jpg" onmouseover="onHover(this,3);"/></li>
+            
+        </ul>
+    </div>
+    <img class ="right" src="images/image_page/3/7.jpg"/>
+<!----</div>---->
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+
+        <!-------modal end---->
+        
+        <!---------4----------->
+        
+        <!------modal begin------>
+     <div id="four" class="modal fade" tabindex="-1">
+            <div class="modal-dialog " style="width:100%">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Something</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+ <!---<div style="position:relative;">-->
+<div id="left">
+        <ul id="menu">
+			<li><img src="images/image_page/4/9.jpg" onmouseover="onHover(this,4);"/></li>
+            <li><img src="images/image_page/4/10.jpg" onmouseover="onHover(this,4);"/></li>
+            
+        
+        </ul>
+    </div>
+    <img class ="right" src="images/image_page/4/9.jpg"/>
+<!----</div>---->
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+
+        <!-------modal end---->
+        
+        <!---------5----------->
+        
+        <!------modal begin------>
+     <div id="five" class="modal fade" tabindex="-1">
+            <div class="modal-dialog " style="width:100%">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Something</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+ <!---<div style="position:relative;">-->
+<div id="left">
+        <ul id="menu">
+          	<li><img src="images/image_page/5/11.jpg" onmouseover="onHover(this,5);"/></li>
+            <li><img src="images/image_page/5/12.jpg" onmouseover="onHover(this,5);"/></li>
+            
+        </ul>
+    </div>
+    <img class ="right" src="images/image_page/5/11.jpg"/>
+<!----</div>---->
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+
+        <!-------modal end---->
+
+
+  
+
+
+  <!--      
+ <script>        
+function changeImage3() {
+ var image = document.getElementById("myImage3");
+    if (image.src.match("images/CPAO.jpg")) {
+        image.src = "images/2014meeting1.jpg";	
+    } else if (image.src.match("images/2014meeting1.jpg")){
+        image.src = "images/2014meeting2.jpg";
+   } else if (image.src.match("images/2014meeting2.jpg")){
+	   image.src = "images/2014meeting3.jpg";
+   } else if (image.src.match("images/2014meeting3.jpg")){
+	   image.src = "images/2014meeting5.jpg";
+} else {
+		image.src = "images/CPAO.jpg";
+}}
+</script>-->
+</body>
+</html>

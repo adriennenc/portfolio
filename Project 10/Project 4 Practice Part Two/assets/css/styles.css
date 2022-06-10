@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-* 
+	Background
+*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+html {
+	background-color: #A5E9E6;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-* 
+	General
+*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+main {
+	max-width: 1050px;
+	background-color: #fefefe;
+	margin: 3.0em auto 0;
+	padding: 1.5em;	
+}
+
+img {
+	width: 100%;	
+}
+
+/* 
+	Question: do you remember what this does?
+	Find where in the HTML I used this for an example.
+*/
+.no-break {
+	white-space: nowrap;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-* 
+	Typography
+*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+h1, h2, h3, h4, h5, h6, p, td, li, figcaption, small {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+}
+
+a:link, a:visited {
+	color: #808080;
+}
+
+a:active, a:hover {
+	color: #000000;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-* 
+	Header
+*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+
+
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-* 
+	Navigation -See nav.css
+*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-* 
+	Article
+*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+#menu-bkg {
+	background: url(../images/menu-header.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 347px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+article h1 {
+	font-size: 36px;
+	font-weight: normal;
+	color: white;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+article p {
+	border-top: 2px solid #F6E6CA;
+	font-size: 18px;
+	margin-top: 2.0em;
+	padding: 2.0em 12% 0;
+	line-height: 1.5em;
+}
+
+article h2 {
+	border-top: 2px solid #F6E6CA;
+	font-weight: bold;
+	margin: 2.0em auto 0;
+	padding: 2.0em 0 1.0em;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-* 
+	Flexbox (Grid)
+*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-bottom: 2.0em;
+}
+
+figure {
+	max-width: 400px;
+	flex: 1 1 auto;
+}
+
+figcaption {
+	text-align: center;
+	padding-top: 0.75em;
+	font-weight: bold;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-* 
+	Footer
+*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+
+
+
+
+
+
+
+
+
+
+
+

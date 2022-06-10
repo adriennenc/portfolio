@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,700');
+
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* GENERAL */
+main, header {
+	max-width: 960px;
+	margin: 2.0em auto 4.0em;
+}
+
+body { 
+	background: url(../images/NCR-bkg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+main {
+	background: url(../images/wood_pattern.png) repeat center center; 
+	/* flex container */
+	display: flex;
+	flex-flow: wrap;
+}
+
+article, aside {
+	flex-grow: 1;
+	flex-basis: 50%;
+	padding: 3%;
+}
+
+article {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+aside {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* TYPOGRAPHY */
+
+p, h1, h2, h3, h4, h5, h6, li, td, figcaption, address {
+	font-family: 'Dosis', sans-serif;
+}
+
+main a:link, main a:visited, footer a:link, footer a:visited {
+	color: #4CAF50;
+	text-decoration: none;
+}
+
+main a:active, main a:hover, footer a:active, footer a:hover {
+	color: gold;
+}
+
+/* NAVIGATION - See menu.css */
+
+/* HEADER */
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 6.0em;
+	margin-bottom: 0;
+}
+
+.logo {
+	width: 462px;
+	height: 181px;
+}
+
+.specials {
+	display: inline-block;
+	background: #4CAF50;
+	color: white;
+	padding: 0 6% 0 2%;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
+.hours  {
+	font-size: 24px;
+}
+
+@media screen and (max-width:48em) {
+	.logo { 
+		max-width: 100%; 
+		height: auto;
+	}
+	.specials {
+		width: 100%;
+		margin-top: 2.0em;
+		border-radius: 0px;
+	}
+	main { margin-top: 0; }
+}
+
+/* MAIN */
+
+aside {
+	color: white;
+}
+
+main p, main h1, main h2, main h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 120%;
+}
+
+main h1 {
+	font-size: 60px;
+	margin: 0.25em 0 0;
+}
+
+main h2 {
+	text-transform: uppercase;
+	font-weight: normal;
+	margin: 1.0em 0 0.5em 0;
+	color: white;
+	background: black;
+	text-align: center;
+	font-size: 24px;
+}
+
+main h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0.75em 0 0 0;
+}
+
+table {
+	width: 100%;
+	margin-bottom: 0.5em;
+}
+
+th {
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+aside small, aside ul, aside li {
+	margin: 0;
+}
+
+aside ul {
+	margin: 0.25em 0 2.0em;
+}
+
+aside li {
+	font-size: 14px;
+}
+
+.footnote {
+	background: #000000;
+	color: white;
+	margin: 1.5em; 0 1.0em;
+	padding: 2%;
+}
+
+article p:nth-of-type(2n+1) {
+	font-weight: 700;
+	color: #444;
+}
+
+/* CONTACT */
+
+#contact {
+	display: block;
+}
+
+#contact p, #contact address, #contact td {
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+#contact button {
+	margin: 2.0em 2.0em 0 0;
+}
+
+#contact h1:not(:first-child) {
+	margin-top: 1.0em;
+}
+
+#contact i {
+	padding: 0 1.0em;
+}
+
+#contact table {
+	margin: 1.0em 0 4.0em;
+}
+
+#contact tr {
+	border-top: 1px dashed #555;
+}
+
+#contact th, #contact td {
+	vertical-align: top;
+	padding: 1.0em 0 2.0em;
+	font-size: 20px;
+}
+
+@media screen and (max-width:48em) {
+	#contact { margin-top: 2.0em; }
+	#contact button {  
+		display: block;
+		margin: 2.0em auto 0;
+	}
+}
+
+/* http://sixrevisions.com/css/ghost-buttons/ */
+.ghost-button {
+	display: inline-block;
+	width: 200px;
+	padding: 8px;
+	color: #fff;
+	background-color: #4CAF50;
+	border: 3px solid #4CAF50;
+	border-radius: 5px;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.ghost-button:hover,
+.ghost-button:active {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #4CAF50;
+	border-color: #4CAF50;
+	transition: background-color 0.3s ease-in, color 0.3s ease-in, border-color 0.3s ease-in;
+}
+
+/* FOOTER */
+
+footer {
+	padding: 0 0 4.0em 0;
+	/*background-color: black;*/
+	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#30291e+0,000000+100 */
+	background: rgb(48,41,30); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(48,41,30,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(48,41,30,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(48,41,30,1) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30291e', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+#sitemap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 960px;
+	margin: 6.0em auto 0;
+}
+
+section {
+	flex: 0 1 auto;
+	padding: 3%;
+}
+
+footer h1, footer address, footer p {
+	color: white;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+footer i {
+	margin: 0 30px 0 0;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Ruda');
+
+/* 
+	Documentation Comment
+*/
+
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+background: url(../images/Omega_Nebula.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.container {
+	width: 800px;
+	margin: 150px auto 1000px;
+	border: 3px double gold;
+	padding: 2.0em 3.0em 2.0em 4.0em;
+	background-color: rgba(255, 255, 255, 0.1);
+	/* opacity: 0.3px; */
+	text-shadow: 2px 2px 10px white;
+}
+
+
+h1 {
+	position: relative;
+	font-family: 'Ruda', 'Arial', sans-serif;
+} 
+	
+h1::before {
+content: "\201C";
+position: absolute;  /* one positioning method */
+top: 0;
+left: 0;
+font-family: "Times New Roman", serif;
+font-size: 2.0em;
+color: gold;
+}
+
+h1::after {
+content: "\201D";
+margin-right: 0px; /* another positioning method */
+}
+
+
+.starman{
+	color: gold;
+	font-weight: bold;
+}
+
+.astronaut {
+	content: "/201C";
+	position: absolute;
+	top: 0;
+	left: 0; 
+}

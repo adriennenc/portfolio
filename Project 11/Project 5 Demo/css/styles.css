@@ -1,0 +1,87 @@
+/* 
+Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+ */
+
+/* HEADER */
+header {
+	background: url(../images/brooke-lark-182428.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 175px;
+	
+}
+
+header h1 {
+	font-weight: bold;
+	font-size: 48px;
+	padding-top: 120px;
+	text-shadow: white 2px 2px 2px;
+}
+
+
+/* KITCHEN */
+#kitchen h1 {
+	font-weight: bold;
+	font-size: 36px;
+	border-bottom: 1px solid #ccc;
+}
+
+#kitchen p {
+	color: #666;
+	font-size: 0.9em;
+}
+
+figcaption {
+	font-size: 0.8em;
+	text-decoration: none;
+}
+
+#kitchen a:hover img {
+	opacity: 0.8;
+}
+
+
+/* FOOTER */
+footer {
+	background: black;
+	color: #ccc;
+	font-size: 0.8em;
+}
+
+footer h1 {
+	font-size: 16px;
+	color: white;
+	text-transform: uppercase;
+	padding-bottom: 0.5em;
+}
+
+footer p {
+	line-height: 0.6em;
+}
+
+footer ul {
+	padding-left: 1.0em;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
